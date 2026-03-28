@@ -1,0 +1,104 @@
+# Kreiraj deletion.html
+@'
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion - Klip Ko</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        h2 { color: #555; margin-top: 20px; }
+        .step { background: #f0f0f0; padding: 15px; margin: 15px 0; border-radius: 8px; }
+        .step-number { background: #9b59b6; color: white; width: 30px; height: 30px; display: inline-block; text-align: center; border-radius: 50%; line-height: 30px; margin-right: 10px; }
+        .button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover { background: #c0392b; }
+        hr { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗑️ Data Deletion Request - Klip Ko</h1>
+        <p>You can request deletion of your data in two ways:</p>
+        
+        <div class="step">
+            <h2><span class="step-number">1</span> Delete Local Data</h2>
+            <p>All your data is stored locally on your computer. To delete all data:</p>
+            <ol>
+                <li>Close Klip Ko application</li>
+                <li>Delete the entire <strong>klip_ko</strong> folder from your desktop</li>
+                <li>All videos, credentials, and settings will be permanently removed</li>
+            </ol>
+            <p><strong>Location:</strong> <code>C:\Users\[YourUsername]\Desktop\klip_ko\</code></p>
+        </div>
+        
+        <div class="step">
+            <h2><span class="step-number">2</span> Revoke Social Media Access</h2>
+            <p>To revoke access to your social media accounts:</p>
+            
+            <h3>YouTube / Google:</h3>
+            <ol>
+                <li>Go to <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a></li>
+                <li>Find "Klip Ko" in the list</li>
+                <li>Click "Remove Access"</li>
+            </ol>
+            
+            <h3>TikTok:</h3>
+            <ol>
+                <li>Go to <a href="https://www.tiktok.com/settings">https://www.tiktok.com/settings</a></li>
+                <li>Click "Privacy" → "Apps and websites"</li>
+                <li>Find "Klip Ko" and click "Remove"</li>
+            </ol>
+            
+            <h3>Instagram / Facebook:</h3>
+            <ol>
+                <li>Go to <a href="https://www.facebook.com/settings?tab=applications">https://www.facebook.com/settings?tab=applications</a></li>
+                <li>Find "Klip Ko" in the list</li>
+                <li>Click "Remove"</li>
+            </ol>
+        </div>
+        
+        <div class="step">
+            <h2><span class="step-number">3</span> Request Manual Deletion</h2>
+            <p>If you need assistance, please email us with your request:</p>
+            <p><strong>Email:</strong> <a href="mailto:klipko@example.com">klipko@example.com</a></p>
+            <p>Include in your email:</p>
+            <ul>
+                <li>Subject: "Data Deletion Request"</li>
+                <li>Your name</li>
+                <li>Account names you used (if known)</li>
+            </ul>
+            <p>We will process your request within 30 days.</p>
+        </div>
+        
+        <a href="#" class="button" onclick="alert('For deletion, please follow the instructions above or email klipko@example.com'); return false;">📧 Request Deletion</a>
+        
+        <hr>
+        <p><strong>Note:</strong> Klip Ko does not store any user data on external servers. All data is stored locally on your device. Deleting the application folder removes all your data.</p>
+        <p><em>Last updated: March 28, 2026</em></p>
+    </div>
+</body>
+</html>
+'@ | Out-File -FilePath deletion.html -Encoding utf8

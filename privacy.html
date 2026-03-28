@@ -1,0 +1,113 @@
+# Kreiraj privacy.html
+@'
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Klip Ko</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        h2 { color: #555; margin-top: 20px; }
+        .date { color: #888; font-size: 14px; }
+        hr { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy - Klip Ko</h1>
+        <p class="date">Last updated: March 28, 2026</p>
+        
+        <h2>1. Introduction</h2>
+        <p>Klip Ko ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our video creation application.</p>
+        
+        <h2>2. Information We Collect</h2>
+        <p>We collect the following types of information:</p>
+        <ul>
+            <li><strong>Account Information:</strong> When you connect your social media accounts (YouTube, TikTok, Instagram, Facebook), we store your access tokens to enable video posting.</li>
+            <li><strong>Video Content:</strong> Videos you create are stored locally on your device. We do not upload them to our servers.</li>
+            <li><strong>API Keys:</strong> Your API keys for Pexels, Unsplash, and ElevenLabs are stored locally in a .env file on your device.</li>
+            <li><strong>Usage Data:</strong> We may collect anonymous usage statistics to improve the application.</li>
+        </ul>
+        
+        <h2>3. How We Use Your Information</h2>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Authenticate you with social media platforms</li>
+            <li>Create and publish videos as you request</li>
+            <li>Improve the application functionality</li>
+            <li>Provide customer support</li>
+        </ul>
+        
+        <h2>4. Data Storage</h2>
+        <p>All your data is stored locally on your device. We do not maintain any servers that store your videos, credentials, or personal information. Your API keys and access tokens are stored in local configuration files on your computer.</p>
+        
+        <h2>5. Third-Party Services</h2>
+        <p>Klip Ko integrates with the following third-party services:</p>
+        <ul>
+            <li><strong>YouTube API</strong> - for video uploads to YouTube</li>
+            <li><strong>TikTok API</strong> - for video uploads to TikTok</li>
+            <li><strong>Instagram API</strong> - for video uploads to Instagram</li>
+            <li><strong>Facebook API</strong> - for video uploads to Facebook</li>
+            <li><strong>Pexels API</strong> - for royalty-free images</li>
+            <li><strong>Unsplash API</strong> - for royalty-free images</li>
+            <li><strong>ElevenLabs API</strong> - for text-to-speech (optional)</li>
+        </ul>
+        <p>These services have their own privacy policies. We recommend reviewing them:</p>
+        <ul>
+            <li>Google/YouTube: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+            <li>TikTok: <a href="https://www.tiktok.com/legal/privacy-policy">https://www.tiktok.com/legal/privacy-policy</a></li>
+            <li>Meta (Instagram/Facebook): <a href="https://www.facebook.com/privacy/policy">https://www.facebook.com/privacy/policy</a></li>
+        </ul>
+        
+        <h2>6. Data Security</h2>
+        <p>We implement security measures to protect your data. All API keys and access tokens are stored locally and never transmitted to our servers. Your videos are stored only on your local device.</p>
+        
+        <h2>7. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your data (it's all stored locally on your device)</li>
+            <li>Delete your data by removing the application and its files</li>
+            <li>Revoke access to your social media accounts through the respective platforms</li>
+            <li>Request deletion of your data (see Section 9)</li>
+        </ul>
+        
+        <h2>8. Children's Privacy</h2>
+        <p>Klip Ko is not intended for children under 13. We do not knowingly collect information from children under 13.</p>
+        
+        <h2>9. Data Deletion</h2>
+        <p>To delete your data:</p>
+        <ol>
+            <li><strong>Local Data:</strong> Delete the entire Klip Ko folder from your computer.</li>
+            <li><strong>Social Media Access:</strong> Revoke access through each platform's settings.</li>
+            <li><strong>Contact Us:</strong> Email us at <strong>klipko@example.com</strong> for assistance.</li>
+        </ol>
+        <p>We will respond to deletion requests within 30 days.</p>
+        
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+        
+        <h2>11. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> klipko@example.com</p>
+        
+        <hr>
+        <p><em>This application uses the YouTube API Services. By using Klip Ko, you agree to be bound by the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube Terms of Service</a>.</em></p>
+    </div>
+</body>
+</html>
+'@ | Out-File -FilePath privacy.html -Encoding utf8
